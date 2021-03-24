@@ -1,0 +1,20 @@
+1.	Write a query using the Production.Product table displaying product number and a description with the “ProductID:Name” format. Hint: You will need to use a function to write this query. Sample output below.
+2.	Write a query to determine the number of customers in the Sales.Customer table.
+3.	Write a query that lists the total number of product units ordered. Use the OrderQty column of the Sales.SalesOrderDetail table and the SUM function.
+4.	Write a query to determine the price of the most expensive product ordered. Use the UnitPrice column of the Sales.SalesOrderDetail table.
+5.	Write a query to determine the average freight amount in the Sales.SalesOrderHeader table.
+6.	Write a query using the Production.Product table that displays the minimum, maximum, and average ListPrice
+7.	Write a query that shows the total number of items ordered for each product. Use the Sales.SalesOrderDetail table to write the query. Sample output below.
+8.	Write a query using the Sales.SalesOrderDetail table that displays a count of the detail lines for each SalesOrderID. Sample output below.
+9.	Write a query using the Production.Product table that lists a count of the products in each product line. Sample output below.
+10.	Write a query that displays the count of orders placed by year for each customer using the Sales.SalesOrderHeader table. Order output by CustomerID and year. Sample output below.
+11.	We want to see how much orders we have received and how much units we really have in the stock for each product. Write a query that displays sum of order quantity as ‘TotalOrdered’ and sum of stocked quantity as ‘TotalStock’, grouped by product id’s. Use PurchaseOrderDetail table. Result set should be ordered by ‘TotalOrdered’ in descending order. Format output nicely. Sample output below.
+12.	Write a query that returns a count of detail lines for each order in the Sales.SalesOrderDetail table by SalesOrderID. Include only those sales orders that have more than three detail lines. Sample output below.
+13.	Write a query that creates a sum of the LineTotal in the Sales.SalesOrderDetail table grouped by the SalesOrderID. Include only those rows where the sum exceeds 1,000. Order output so that highest LineTotal sums are on top. Sample output below.
+14.	Write a query that groups the products by ProductModelID along with a count. Display the rows that have a count more than 1. Only the products with blue or red color should be included. Order output by ProductModelID. Sample output below
+15.	Write a query using the Sales.SalesOrderDetail table to come up with a count of unique ProductID values that have been ordered.
+16.	Write a query using the Sales.SalesOrderHeader table that returns the count of unique salespersons that have worked with customer. Return only those customers who have worked with several salespersons. Order output by CustomerID. Sample output below.
+17.	Some products are ordered more than we have in our stock. We need to figure out which ones we are lacking in the stock. Display cases when the TotalOrdered is more than TotalStock. Adjust SQL from task 11.
+18.	If customer ordered only one item, it is "One Item Order". Show the SalesOrderID, UnitPrice for every “One Item Order”. Use SalesOrderDetail table. Sample output below.
+19.	Show how many (count) orders are in the following price ([Sales].[SalesOrderHeader] -> TotalDue) ranges. In output also include what is total (summed) sold value (TotalDue) in each range. Be careful with output ordering by range as in table below. Sample output below.
+20.	Using Employee table, please count, how many employees are in each age category. Age categories: ‘Below 30’, ‘Between 30 and 49’ and ‘Above 49’. Make sure results are ordered as in picture below. Age should be calculated from BirthDate for the moment of SQL execution (reuse from previous workshop). Also sample output included.
